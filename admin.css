@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+p.outset {border-style: outset;}
+
+
+
+body {overflow-x: hidden;}
+
+.title{
+    padding: 10px;
+    color:  #FFEFCA;
+
+}
+
+h3{
+color: #FFEFCA;
+
+}
+
+h4{
+    color:  #004CAF;
+}
+
+
+
+body{
+    background-color: #C1A975;
+}
+
+
+.container{
+    border: double;
+    border: 2px;
+
+}
+
+
+/* Table */
+
+#table{
+    border: double;
+    border: 2px;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+
+
+/* buttons */
+
+.button {
+
+    
+    padding: 2px;
+    border: none;
+    opacity: 10.5;
+
+}
+
+.button:hover{
+background-color: white;
+opacity: 1;
+}
+
+
+
+/* Modlaa Button */
+.btn-modal{
+
+}
+
+.button1{
+    padding-left: 79%;
+    padding-top: 15px;
+}
+
+.btn-modal{border: none;
+    color: #004CAF;}
+
+
+    #navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: grey;
+        padding: 20px;
+        
+      }
+      
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style-type: none;
+        
+      }
+      
+      .nav-link a {
+        color
+        text-decoration: none;
+      }
+      
+      #toggler{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display:  none;
+        
+      }
+      
+      @media screen and (max-width: 768px) {
+        .nav-links{
+          flex-direction: column;
+          height: 100vh;
+          align-items: center;
+          
+        }
+        
+        #navbar {
+          top: -110vh;
+          transition: all 0.6s linear;
+        }
+        
+        
+        
+        #navbar.active{
+          top: 0;
+        }
+        
+         #toggler{ 
+         display: block;
+        }
+        
+      }
